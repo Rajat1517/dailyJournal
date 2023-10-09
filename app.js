@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://rajat-mihsra:Rajat_39144@cluster0.qehtb.mongodb.net/blogpostDB");
+mongoose.connect("mongodb+srv://rajat-mishra:journal_123@cluster0.y84kjmv.mongodb.net/?retryWrites=true&w=majority");
 
 const postSchema = mongoose.Schema(
   {
@@ -91,5 +91,5 @@ if (port == null || port == "") {
   port = 3000;
 }
 app.listen(port, function() {
-  console.log("Server started on port 3000");
+  console.log("Server started");
 });
