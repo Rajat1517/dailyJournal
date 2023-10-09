@@ -97,7 +97,7 @@ app.listen(port, function() {
 });
 
 const job = new cron.CronJob("*/10 * * * *", ()=>{
-      https.get("", (res)=>{
+      https.get("https://daily-journal-bsb9.onrender.com", (res)=>{
         if(res.statusCode==200)
         {
           console.log("server restarted");
