@@ -15,8 +15,10 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cron": "^3.1.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "https": "^1.0.0",
     "lodash": "^4.17.11",
     "mongoose": "^6.2.9"
   }
